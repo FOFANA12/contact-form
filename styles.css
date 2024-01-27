@@ -1,0 +1,79 @@
+/* Styles de base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Media Queries pour les différentes tailles d'écran */
+
+/* Pour les écrans larges */
+@media screen and (min-width: 1025px) {
+  .container {
+    width: 60%;
+  }
+}
+
+/* Pour les tablettes en mode paysage */
+@media screen and (min-width: 601px) and (max-width: 959px) {
+  .container {
+    width: 70%;
+  }
+}
+
+/* Pour les smartphones en mode portrait */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
